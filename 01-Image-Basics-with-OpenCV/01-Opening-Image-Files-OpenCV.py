@@ -1,6 +1,13 @@
+import os
+
 import cv2
 
-img = cv2.imread('DATA/00-puppy.jpg')
+path = os.curdir
+path = os.path.join(path, '../')
+path = os.path.join(path, 'DATA/00-puppy.jpg')
+print(path)
+img = cv2.imread(path)
+
 
 while True:
 
